@@ -61,7 +61,7 @@ ul {
   padding: 0;
 }
 
-li {
+main li {
   background-color: #f8f8f8;
   margin: 0.5rem 0;
   padding: 1rem;
@@ -71,7 +71,7 @@ li {
   transition: background 0.3s;
 }
 
-li:hover {
+main li:hover {
   background-color: #e8f4ff;
 }
 
