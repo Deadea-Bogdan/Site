@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Înregistrare - Geo Quiz</title>
-  <link rel="stylesheet" href="../styles/signup.css">
+  <title>Logare - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
 
@@ -25,26 +25,21 @@
   <main>
     <section class="hero-page">
       <div class="container">
-        <span class="page-badge">Cont nou</span>
-        <h1>Înregistrare</h1>
+        <span class="page-badge">Autentificare</span>
+        <h1>Logare</h1>
         <p class="page-text">
-          Creează-ți un cont nou pentru Geo Quiz.
+          Introdu datele contului tău pentru a te autentifica.
         </p>
       </div>
     </section>
 
-    <section class="signup-section">
-      <div class="container signup-grid">
+    <section class="login-section">
+      <div class="container login-grid">
         <div class="form-card">
-          <form action="../api/signup.php" method="post">
+          <form action="../api/login.php" method="post">
             <div class="form-group">
               <label for="username">Nume utilizator</label>
               <input type="text" id="username" name="username" required>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
@@ -52,16 +47,11 @@
               <input type="password" id="password" name="password" required>
             </div>
 
-            <div class="form-group">
-              <label for="confirm_password">Confirmă parola</label>
-              <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
-
-            <button type="submit" class="submit-btn">Înregistrează-te</button>
+            <button type="submit" class="submit-btn">Autentificare</button>
           </form>
 
           <p class="login-link">
-            Ai deja un cont? <a href="login.html">Autentifică-te aici</a>.
+            Nu ai cont? <a href="signup.html">Înregistrează-te aici</a>.
           </p>
         </div>
       </div>

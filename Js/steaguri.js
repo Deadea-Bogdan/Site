@@ -130,7 +130,6 @@ function terminaJoc() {
   }
 
   const rezultatJoc = {
-  user_id: 1,
   game_name: "Testul Steagurilor",
   score: scor,
   total_questions: intrebari.length

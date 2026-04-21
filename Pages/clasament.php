@@ -1,3 +1,11 @@
+<?php
+session_start();
+$username = "";
+
+if (isset($_SESSION["username"])) {
+    $username = $_SESSION["username"];
+}
+?>
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -16,7 +24,7 @@
         <ul>
           <li><a href="Index.html">Acasă</a></li>
           <li><a href="teste.html">Teste</a></li>
-          <li><a href="clasament.html" class="active">Clasament</a></li>
+          <li><a href="clasament.php" class="active">Clasament</a></li>
           <li><a href="despre.html">Despre</a></li>
         </ul>
       </nav>
@@ -31,6 +39,9 @@
         <p class="page-text">
           Aici poți vedea rezultatele salvate după terminarea testelor.
         </p>
+        <?php if ($username !== ""): ?>
+  <p class="user-logat">Utilizator logat: <strong><?php echo htmlspecialchars($username); ?></strong></p>
+<?php endif; ?>
       </div>
     </section>
 

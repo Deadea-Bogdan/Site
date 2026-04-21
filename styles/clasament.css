@@ -226,4 +226,10 @@ tbody tr:hover td {
     justify-content: center;
     text-align: center;
   }
+  .user-logat {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #0f2740;
+  font-weight: bold;
+  }
 }
