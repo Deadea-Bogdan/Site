@@ -1,92 +1,159 @@
+<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/style.css">
   <title>Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
-      <h1>Geo Quiz</h1>
-      <p>Ghicește steaguri, capitale și granițe — cât de bine cunoști lumea?</p>
-      <div>
-        <a href="teste.html">Joacă acum</a>
-        <a href="login.html">Autentificare</a>
-        <a href="signup.html">Înregistrare</a>
-      </div>
-      <button>test buton</button>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
 
-  <header>
-    <h2>Geo Quiz</h2>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Acasă</a></li>
-        <li><a href="teste.html">Teste</a></li>
-        <li><a href="clasament.html">Clasament</a></li>
-        <li><a href="despre.html">Despre</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html" class="active">Acasă</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="clasament.html">Clasament</a></li>
+          <li><a href="despre.html">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">Platformă educațională</span>
+          <h1>Geo Quiz</h1>
+          <p>
+            Ghicește steaguri, capitale și continente și vezi cât de bine cunoști lumea.
+            Un mod simplu și interactiv de a exersa geografia.
+          </p>
 
-    <section>
-      <h2>Ce poți face</h2>
-      <div>
-        <div>
-          <h3>Joacă teste de geografie</h3>
-          <p>Învață despre țări, steaguri și capitale distrându-te.</p>
+          <div class="hero-buttons">
+            <a href="teste.html" class="btn btn-primary">Joacă acum</a>
+            <a href="signup.html" class="btn btn-secondary">Înregistrare</a>
+            <a href="login.html" class="btn btn-light">Autentificare</a>
+          </div>
         </div>
 
-        <div>
-          <h3>Urmărește-ți scorul</h3>
-          <p>Autentifică-te pentru a salva rezultatele și a urca în clasament.</p>
-        </div>
+        <div class="hero-card">
+          <h2>Test rapid</h2>
+          <p class="hero-card-text">Începe cu cele mai populare provocări:</p>
 
-        <div>
-          <h3>Concurează sau învață</h3>
-          <p>Joacă singur sau provoacă-ți prietenii — antrenează-te sau concurează.</p>
+          <ul class="hero-list">
+            <li>Steaguri</li>
+            <li>Capitale</li>
+            <li>Continente</li>
+            <li>Granițe</li>
+          </ul>
+
+          <button id="schimbaTextul" class="mini-btn">Afișează un mesaj</button>
+          <p id="mesaj" class="mesaj">Ești pregătit să înveți geografia într-un mod interactiv?</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Cum funcționează</h2>
-      <ol>
-        <li>Alege un test (începe cu Testul Steagurilor!)</li>
-        <li>Selectează răspunsul corect înainte să se termine timpul.</li>
-        <li>Vezi scorul tău și provoacă-ți prietenii.</li>
-      </ol>
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Ce poți face</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Joacă teste de geografie</h3>
+            <p>Învață despre țări, steaguri și capitale prin întrebări rapide și ușor de parcurs.</p>
+          </article>
+
+          <article class="card">
+            <h3>Urmărește-ți progresul</h3>
+            <p>Autentifică-te pentru a salva rezultatele și pentru a vedea cum evoluezi.</p>
+          </article>
+
+          <article class="card">
+            <h3>Compară scorurile</h3>
+            <p>Verifică clasamentul și încearcă să obții un scor cât mai mare.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Clasament</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Loc</th>
-            <th>Jucător</th>
-            <th>Scor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>ExempluJucător</td><td>950</td></tr>
-          <tr><td>2</td><td>Calator99</td><td>900</td></tr>
-          <tr><td>3</td><td>MaestrulGlobului</td><td>870</td></tr>
-        </tbody>
-      </table>
+    <section class="steps">
+      <div class="container">
+        <h2 class="section-title">Cum funcționează</h2>
+
+        <div class="steps-box">
+          <ol>
+            <li>Alege un test de geografie.</li>
+            <li>Răspunde la întrebări înainte să expire timpul.</li>
+            <li>Primește scorul și încearcă din nou pentru un rezultat mai bun.</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Despre Geo Quiz</h2>
-      <p>Geo Quiz este o modalitate distractivă de a explora lumea prin teste interactive. Testează-ți cunoștințele de geografie — de la steaguri la capitale — și vezi cât de sus poți ajunge în clasament!</p>
+    <section class="preview-ranking">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Clasament</h2>
+          <a href="clasament.html" class="section-link">Vezi tot clasamentul</a>
+        </div>
+
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Loc</th>
+                <th>Jucător</th>
+                <th>Scor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>ExempluJucător</td>
+                <td>950</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Calator99</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>MaestrulGlobului</td>
+                <td>870</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-box">
+          <h2 class="section-title">Despre Geo Quiz</h2>
+          <p>
+            Geo Quiz este un site educațional creat pentru exersarea cunoștințelor de geografie.
+            Platforma oferă teste introductive, un mod simplu de învățare și o interfață clară,
+            potrivită pentru utilizatori începători.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>Geo Quiz</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anCurent"></span> Geo Quiz</p>
+      <p>Proiect universitar introductiv</p>
+    </div>
   </footer>
-<script src="/Js/Index.js"></script>
+
+  <script src="../Js/Index.js"></script>
 </body>
 </html>

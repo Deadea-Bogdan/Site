@@ -1,12 +1,37 @@
-let form = document.querySelector("form");
+const anCurent = document.getElementById("anCurent");
+const signupForm = document.getElementById("signupForm");
+const formMesaj = document.getElementById("formMesaj");
+const mesajInfo = document.getElementById("mesajInfo");
 
-form.addEventListener("submit", function(event) {
+anCurent.textContent = new Date().getFullYear();
 
-    let parola = document.querySelector('input[name="password"]').value;
-    let confirm = document.querySelector('input[name="confirm_password"]').value;
+signupForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    if (parola !== confirm) {
-        alert("Parolele nu coincid!");
-        event.preventDefault();
-    }
+  const username = document.getElementById("username").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirm_password").value;
+
+  if (username === "" || email === "" || password === "" || confirmPassword === "") {
+    formMesaj.textContent = "Te rog completează toate câmpurile.";
+    mesajInfo.textContent = "Formularul trebuie completat integral înainte de trimitere.";
+    return;
+  }
+
+  if (password.length < 6) {
+    formMesaj.textContent = "Parola trebuie să aibă cel puțin 6 caractere.";
+    mesajInfo.textContent = "Alege o parolă puțin mai lungă pentru validare.";
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    formMesaj.textContent = "Parolele nu coincid.";
+    mesajInfo.textContent = "Verifică parola introdusă și confirmarea acesteia.";
+    return;
+  }
+
+  formMesaj.textContent = "Contul a fost validat local. Poți conecta aici logica de înregistrare.";
+  mesajInfo.textContent = "Datele au trecut validarea de bază din JavaScript.";
+  signupForm.reset();
 });

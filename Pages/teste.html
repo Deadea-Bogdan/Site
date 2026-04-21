@@ -3,39 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/teste.css">
   <title>Teste - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/teste.css">
 </head>
 <body>
 
-  <header>
-    <a href="Index.html" class="logo">Quiz</a>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Acasă</a></li>
-        <li><a href="teste.html">Teste</a></li>
-        <li><a href="clasament.html">Clasament</a></li>
-        <li><a href="despre.html">Despre</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="teste.html" class="active">Teste</a></li>
+          <li><a href="clasament.html">Clasament</a></li>
+          <li><a href="despre.html">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Teste de geografie</h1>
+    <section class="hero-page">
+      <div class="container">
+        <span class="page-badge">Secțiune de testare</span>
+        <h1>Teste de geografie</h1>
+        <p class="page-text">
+          Alege un test și exersează-ți cunoștințele despre lume.
+          Poți începe cu întrebări introductive și apoi poți trece la provocări mai dificile.
+        </p>
+      </div>
+    </section>
 
-      <ul>
-        <li>Testul Steagurilor</li>
-        <li>Testul Capitalelor</li>
-        <li>Testul Continentelor</li>
-        <li>Testul Granițelor</li>
-      </ul>
+    <section class="tests-section">
+      <div class="container">
+        <div class="tests-grid">
+
+          <article class="test-card">
+            <div class="image-box">
+              <img src="../images/steaguri.jpg" alt="Testul Steagurilor">
+              <div class="overlay">
+                <span class="test-level">Ușor</span>
+                <h2>Testul Steagurilor</h2>
+                <p>Recunoaște steagurile țărilor și verifică cât de rapid poți răspunde corect.</p>
+                <a href="steaguri.html" class="test-btn">Începe testul</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="image-box">
+              <img src="../images/capitale.jpg" alt="Testul Capitalelor">
+              <div class="overlay">
+                <span class="test-level">Ușor</span>
+                <h2>Testul Capitalelor</h2>
+                <p>Asociază fiecare țară cu capitala sa și vezi cât de bine stăpânești geografia politică.</p>
+                <a href="capitale.html" class="test-btn">Începe testul</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="image-box">
+              <img src="../images/continente.jpg" alt="Testul Continentelor">
+              <div class="overlay">
+                <span class="test-level">Mediu</span>
+                <h2>Testul Continentelor</h2>
+                <p>Identifică statele și regiunile după continent și înțelege mai bine structura lumii.</p>
+                <a href="continente.html" class="test-btn">Începe testul</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="image-box">
+              <img src="../images/granite.jpg" alt="Testul Granițelor">
+              <div class="overlay">
+                <span class="test-level">Mediu</span>
+                <h2>Testul Granițelor</h2>
+                <p>Descoperă ce țări se învecinează și verifică dacă poți recunoaște relațiile geografice.</p>
+                <a href="granite.html" class="test-btn">Începe testul</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-box">
+          <h2>Test selectat</h2>
+          <p id="testMesaj">
+            Selectează un test pentru a vedea aici ce ai ales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-section">
+      <div class="container">
+        <h2 class="section-title">Cum alegi testul potrivit</h2>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Pentru început</h3>
+            <p>Alege testele despre steaguri sau capitale dacă vrei o introducere mai simplă.</p>
+          </div>
+
+          <div class="tip-card">
+            <h3>Pentru antrenament</h3>
+            <p>Refă testele de mai multe ori pentru a observa progresul și pentru a memora mai ușor.</p>
+          </div>
+
+          <div class="tip-card">
+            <h3>Pentru provocare</h3>
+            <p>Încearcă testul continentelor și al granițelor dacă vrei întrebări ceva mai dificile.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Geo Quiz</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anCurent"></span> Geo Quiz</p>
+      <p>Secțiunea teste</p>
+    </div>
   </footer>
-<script src="/Js/teste.js"></script>
+
+  <script src="../Js/teste.js"></script>
 </body>
 </html>

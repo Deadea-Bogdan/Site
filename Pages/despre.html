@@ -3,34 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/despre.css">
   <title>Despre - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/despre.css">
 </head>
 <body>
 
-  <header>
-    <a href="Index.html" class="logo"><span class="brand-geo">Geo</span><span class="brand-quiz">Quiz</span></a>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Acasă</a></li>
-        <li><a href="teste.html">Teste</a></li>
-        <li><a href="clasament.html">Clasament</a></li>
-        <li><a href="despre.html">Despre</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="clasament.html">Clasament</a></li>
+          <li><a href="despre.html" class="active">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Despre Geo Quiz</h1>
-      <p>Geo Quiz este un Joc .</p>
-      <p id="an"></p>
+    <section class="hero-page">
+      <div class="container">
+        <span class="page-badge">Informații despre proiect</span>
+        <h1>Despre Geo Quiz</h1>
+        <p class="page-text">
+          Geo Quiz este un proiect educațional realizat pentru exersarea cunoștințelor de geografie
+          prin teste simple, interactive și ușor de utilizat.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <article class="about-card main-card">
+            <h2>Ce este Geo Quiz</h2>
+            <p>
+              Geo Quiz este un site web destinat testării cunoștințelor de geografie.
+              Utilizatorul poate parcurge diferite tipuri de teste, precum cele despre steaguri,
+              capitale, continente sau granițe.
+            </p>
+            <p>
+              Scopul proiectului este de a oferi o metodă simplă și accesibilă de învățare,
+              potrivită pentru elevi, studenți sau orice persoană interesată de geografie.
+            </p>
+          </article>
+
+          <article class="about-card side-card">
+            <h2>Informație rapidă</h2>
+            <p><strong>An curent:</strong> <span id="an"></span></p>
+            <p><strong>Tip proiect:</strong> proiect universitar introductiv</p>
+            <p><strong>Domeniu:</strong> educație și testare interactivă</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="goals-section">
+      <div class="container">
+        <h2 class="section-title">Obiectivele site-ului</h2>
+
+        <div class="goals-grid">
+          <article class="goal-card">
+            <h3>Învățare ușoară</h3>
+            <p>Site-ul este conceput astfel încât utilizatorul să poată învăța prin exercițiu și repetiție.</p>
+          </article>
+
+          <article class="goal-card">
+            <h3>Interfață simplă</h3>
+            <p>Designul este clar și ușor de folosit, fără elemente complicate sau greu de urmărit.</p>
+          </article>
+
+          <article class="goal-card">
+            <h3>Motivare prin rezultate</h3>
+            <p>Clasamentul și testele ajută utilizatorul să-și urmărească progresul și performanța.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="extra-section">
+      <div class="container">
+        <div class="extra-box">
+          <h2>Mesaj</h2>
+          <p id="mesajSite">
+            Geo Quiz își propune să transforme noțiunile de geografie într-o experiență mai interactivă și mai plăcută.
+          </p>
+          <button id="schimbaMesajul" class="info-btn">Schimbă mesajul</button>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Geo Quiz</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anFooter"></span> Geo Quiz</p>
+      <p>Pagina despre proiect</p>
+    </div>
   </footer>
-<script src="/Js/despre.js"></script>
+
+  <script src="../Js/despre.js"></script>
 </body>
 </html>

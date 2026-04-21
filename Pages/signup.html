@@ -3,51 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/signup.css">
   <title>Înregistrare - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/signup.css">
 </head>
 <body>
 
-  <header>
-    <a href="Index.html">Geo Quiz</a>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Acasă</a></li>
-        <li><a href="teste.html">Teste</a></li>
-        <li><a href="clasament.html">Clasament</a></li>
-        <li><a href="despre.html">Despre</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="clasament.html">Clasament</a></li>
+          <li><a href="despre.html">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Înregistrare</h1>
-      <p>Creează-ți un cont nou</p>
+    <section class="hero-page">
+      <div class="container">
+        <span class="page-badge">Cont nou</span>
+        <h1>Înregistrare</h1>
+        <p class="page-text">
+          Creează-ți un cont pentru a salva rezultatele, pentru a urmări progresul
+          și pentru a participa mai ușor la clasamentul Geo Quiz.
+        </p>
+      </div>
+    </section>
 
-      <form action="#" method="post">
-        <label>Nume utilizator:</label><br>
-        <input type="text" name="username" required><br><br>
+    <section class="signup-section">
+      <div class="container signup-grid">
+        <div class="signup-info">
+          <div class="info-card">
+            <h2>De ce să îți faci cont</h2>
+            <ul class="benefits-list">
+              <li>Poți salva rezultatele obținute la teste.</li>
+              <li>Poți urmări mai ușor progresul tău.</li>
+              <li>Poți apărea în clasamentul jucătorilor.</li>
+              <li>Poți reveni rapid la platformă.</li>
+            </ul>
+          </div>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+          <div class="info-card">
+            <h2>Informație</h2>
+            <p id="mesajInfo">
+              Completează formularul cu date valide pentru a crea un cont nou.
+            </p>
+          </div>
+        </div>
 
-        <label>Parolă:</label><br>
-        <input type="password" name="password" required><br><br>
+        <div class="form-card">
+          <form id="signupForm" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="username">Nume utilizator</label>
+              <input type="text" id="username" name="username" placeholder="Introdu numele de utilizator">
+            </div>
 
-        <label>Confirmă parola:</label><br>
-        <input type="password" name="confirm_password" required><br><br>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Introdu adresa de email">
+            </div>
 
-        <button type="submit">Înregistrează-te</button>
-      </form>
+            <div class="form-group">
+              <label for="password">Parolă</label>
+              <input type="password" id="password" name="password" placeholder="Introdu parola">
+            </div>
 
-      <p>Ai deja un cont? <a href="login.html">Autentifică-te aici</a>.</p>
+            <div class="form-group">
+              <label for="confirm_password">Confirmă parola</label>
+              <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmă parola">
+            </div>
+
+            <button type="submit" class="submit-btn">Înregistrează-te</button>
+
+            <p id="formMesaj" class="form-message"></p>
+          </form>
+
+          <p class="login-link">
+            Ai deja un cont? <a href="login.html">Autentifică-te aici</a>.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Geo Quiz</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anCurent"></span> Geo Quiz</p>
+      <p>Pagina de înregistrare</p>
+    </div>
   </footer>
-<script src="/Js/signup.js"></script>
+
+  <script src="../Js/signup.js"></script>
 </body>
 </html>

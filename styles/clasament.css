@@ -1,94 +1,229 @@
-body, h1, h2, p, ul {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #001f3f;
-  line-height: 1.5;
+  background: #f4f8fc;
+  color: #16324f;
+  line-height: 1.6;
 }
 
 a {
-  color: #00bfff;
   text-decoration: none;
 }
 
-a:hover {
-  color: #ff851b;
-}
-
-header {
-  background-color: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-header a {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-nav ul {
+ul {
   list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.topbar {
+  background: #0f2740;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.topbar-content {
+  min-height: 72px;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-nav a:hover {
-  color: #00bfff;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
+.nav ul {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #dbe9f6;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #55c2ff;
+}
+
+.hero-page {
+  padding: 55px 0 30px;
+  background: linear-gradient(180deg, #eaf4ff 0%, #f4f8fc 100%);
   text-align: center;
-  padding: 1rem;
 }
 
-h1 {
-  color: #001f3f;
-  margin-bottom: 0.5rem;
+.page-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  background: #d9efff;
+  color: #0f5c8a;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
-p {
+.hero-page h1 {
+  font-size: 2.7rem;
+  color: #0f2740;
+  margin-bottom: 0.8rem;
+}
+
+.page-text {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #3f5d79;
+  font-size: 1.05rem;
+}
+
+.ranking-section,
+.details-section {
+  padding: 30px 0 50px;
+}
+
+.ranking-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 14px;
+  padding: 1.4rem;
+  box-shadow: 0 8px 22px rgba(15, 39, 64, 0.05);
+  text-align: center;
+}
+
+.info-card h2 {
   font-size: 1.1rem;
+  color: #0f2740;
+  margin-bottom: 0.6rem;
+}
+
+.info-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1aa3ff;
+}
+
+.table-box {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(15, 39, 64, 0.05);
+  padding: 1rem;
+  overflow-x: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 0.6rem;
+th,
+td {
+  padding: 0.95rem;
+  text-align: center;
+  border-bottom: 1px solid #e4edf5;
 }
 
 th {
-  background-color: #00bfff;
-  color: white;
+  background: #1aa3ff;
+  color: #ffffff;
 }
 
-tr:nth-child(even) {
-  background-color: #f8f8f8;
+tbody tr:hover td {
+  background: #f5faff;
 }
 
-tr:hover {
-  background-color: #e8f4ff;
-}
-
-footer {
-  background-color: #001f3f;
-  color: white;
+.section-title {
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  color: #0f2740;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.detail-card {
+  background: #ffffff;
+  border: 1px solid #e2ebf3;
+  border-radius: 14px;
+  padding: 1.4rem;
+  box-shadow: 0 8px 22px rgba(15, 39, 64, 0.05);
+}
+
+.detail-card h3 {
+  margin-bottom: 0.7rem;
+  color: #0f2740;
+}
+
+.detail-card p {
+  color: #4d6881;
+}
+
+.footer {
+  background: #0f2740;
+  color: #d9e6f2;
+  margin-top: 20px;
+}
+
+.footer-content {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .ranking-info,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-page h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .nav ul {
+    justify-content: center;
+  }
+
+  .footer-content {
+    justify-content: center;
+    text-align: center;
+  }
 }

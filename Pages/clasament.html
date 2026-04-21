@@ -3,49 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/clasament.css">
   <title>Clasament - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/clasament.css">
 </head>
 <body>
-  <header>
-    <a href="Index.html" class="logo"><span class="brand-geo">Geo</span><span class="brand-quiz">Quiz</span></a>
-    <nav>
-      <ul>
-        <li><a href="Index.html">Acasă</a></li>
-        <li><a href="teste.html">Teste</a></li>
-        <li><a href="clasament.html">Clasament</a></li>
-        <li><a href="despre.html">Despre</a></li>
-      </ul>
-    </nav>
+
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="clasament.html" class="active">Clasament</a></li>
+          <li><a href="despre.html">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Clasament</h1>
-      <p>Cei mai buni jucători din Geo Quiz.</p>
-      <p id="numar"></p>
+    <section class="hero-page">
+      <div class="container">
+        <span class="page-badge">Rezultatele jucătorilor</span>
+        <h1>Clasament</h1>
+        <p class="page-text">
+          Aici poți vedea rezultatele salvate după terminarea testelor.
+        </p>
+      </div>
+    </section>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Loc</th>
-            <th>Jucător</th>
-            <th>Scor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1</td><td>david</td><td>950</td></tr>
-          <tr><td>2</td><td>dima</td><td>900</td></tr>
-          <tr><td>3</td><td>Ion Ceban</td><td>870</td></tr>
-        </tbody>
-      </table>
+    <section class="ranking-section">
+      <div class="container">
+        <div class="ranking-info">
+          <div class="info-card">
+            <h2>Total rezultate</h2>
+            <p id="numarJucatori">0</p>
+          </div>
+
+          <div class="info-card">
+            <h2>Cel mai mare scor</h2>
+            <p id="scorMaxim">0</p>
+          </div>
+        </div>
+
+        <div class="table-box">
+          <table>
+  <thead>
+    <tr>
+      <th>Loc</th>
+      <th>Jucător</th>
+      <th>Joc</th>
+      <th>Scor</th>
+    </tr>
+  </thead>
+  <tbody id="clasamentBody"></tbody>
+</table>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Geo Quiz</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anCurent"></span> Geo Quiz</p>
+      <p>Pagina clasament</p>
+    </div>
   </footer>
-<script src="/Js/clasament.js"></script>
 
+  <script src="../Js/clasament.js"></script>
 </body>
 </html>

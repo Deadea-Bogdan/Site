@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testul Capitalelor - Geo Quiz</title>
+  <link rel="stylesheet" href="../styles/capitale.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="Index.html" class="logo">Geo Quiz</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="teste.html" class="active">Teste</a></li>
+          <li><a href="clasament.html">Clasament</a></li>
+          <li><a href="despre.html">Despre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-page">
+      <div class="container">
+        <span class="page-badge">Test de geografie</span>
+        <h1>Testul Capitalelor</h1>
+        <p class="page-text">
+          Citește întrebarea și alege capitala corectă.
+        </p>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="container">
+        <div class="quiz-box">
+
+          <div class="quiz-top">
+            <p>Întrebarea <span id="intrebareCurenta">1</span> din <span id="totalIntrebari">5</span></p>
+            <p>Scor: <span id="scor">0</span></p>
+          </div>
+
+          <div class="country-box">
+            <p class="country-label">Țara:</p>
+            <h2 id="countryName">Franța</h2>
+          </div>
+
+          <h2 id="questionText">Care este capitala acestei țări?</h2>
+
+          <div class="answers" id="answersBox"></div>
+
+          <p id="mesajRaspuns" class="mesaj-raspuns"></p>
+
+          <div class="quiz-actions">
+            <button id="nextBtn" class="next-btn">Următoarea întrebare</button>
+          </div>
+
+        </div>
+
+        <div id="finalBox" class="final-box ascuns">
+          <h2>Test terminat</h2>
+          <p>Scor final: <span id="scorFinal">0</span></p>
+          <p id="rezultatText"></p>
+          <div class="final-actions">
+            <button id="restartBtn" class="restart-btn">Joacă din nou</button>
+            <a href="teste.html" class="back-btn">Înapoi la teste</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="anCurent"></span> Geo Quiz</p>
+      <p>Testul Capitalelor</p>
+    </div>
+  </footer>
+
+  <script src="../Js/capitale.js"></script>
+</body>
+</html>
